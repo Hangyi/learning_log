@@ -20,4 +20,7 @@ urlpatterns = [
 
     # 用于添加新条目的页面
     re_path('new_entry/(?P<topic_id>\d+)/', views.new_entry, name='new_entry'),
+
+    # 用于编辑条目的页面
+    re_path('edit_entry/(?P<entry_id>\d+)/', views.edit_entry, name='edit_entry'),
 ]
